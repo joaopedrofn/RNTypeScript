@@ -3,15 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native run-android & react-native start",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@types/jest": "^25.1.0",
+    "@types/react": "^16.9.19",
+    "@types/react-native": "^0.61.5",
+    "@types/react-test-renderer": "^16.9.2",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "typescript": "^3.7.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
