@@ -13,7 +13,10 @@ export const Container = styled.View`
   flex-wrap: wrap;
 `;
 
-export const Input = styled.Text`
+export const Input = styled.Text.attrs({
+  numberOfLines: 1,
+  ellipsizeMode: 'head',
+})`
   width: ${width}px;
   background-color: #607d8b;
   height: ${buttonHeight}px;
@@ -25,16 +28,33 @@ export const Input = styled.Text`
   font-size: ${fontSize}px;
 `;
 
-type Props = {number: boolean; operation: boolean; double: boolean};
-export const Button = styled.TouchableOpacity<Props>`
-  background-color: ${({
-    number,
-    operation,
-  }: {
-    number: Boolean;
-    operation: Boolean;
-  }) => (number ? '#eceff1' : operation ? '#80cbc4' : '#90a4ae')};
-  width: ${({double}: {double: Boolean}) => (double ? width / 2 : width / 4)}px;
+export const Number = styled.TouchableOpacity`
+  background-color: #eceff1;
+  width: ${width / 4}px;
+  align-items: center;
+  justify-content: center;
+  height: ${buttonHeight}px;
+`;
+
+export const Operation = styled.TouchableOpacity`
+  background-color: #80cbc4;
+  width: ${width / 4}px;
+  align-items: center;
+  justify-content: center;
+  height: ${buttonHeight}px;
+`;
+
+export const Extra = styled.TouchableOpacity`
+  background-color: #90a4ae;
+  width: ${width / 4}px;
+  align-items: center;
+  justify-content: center;
+  height: ${buttonHeight}px;
+`;
+
+export const Double = styled.TouchableOpacity`
+  background-color: #eceff1;
+  width: ${width / 2}px;
   align-items: center;
   justify-content: center;
   height: ${buttonHeight}px;
