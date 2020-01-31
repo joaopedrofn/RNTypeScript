@@ -12,7 +12,6 @@
   "dependencies": {
     "@types/jest": "^25.1.0",
     "@types/react": "^16.9.19",
-    "@types/react-native": "^0.61.5",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^4.4.2",
     "react": "16.9.0",
@@ -25,6 +24,8 @@
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
+    "@types/react-native": "^0.61.8",
+    "@types/react-native-vector-icons": "^6.4.5",
     "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-styled-components": "^1.10.7",
